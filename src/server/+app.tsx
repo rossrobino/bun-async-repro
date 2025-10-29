@@ -11,6 +11,7 @@ const Component = () => {
 
 const page = new Get("/", () => {
 	return (
+		// also works when `main` is changed to a Fragment
 		<main>
 			<Component />
 		</main>
