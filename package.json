@@ -1,0 +1,21 @@
+{
+	"name": "bun-async-repro",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite",
+		"check": "bunx --bun tsc",
+		"build": "bunx --bun vite build",
+		"run:fetch": "bunx --bun vite build && bun dist/server/app",
+		"run:node": "bunx --bun vite build && bun server"
+	},
+	"dependencies": {
+		"ovr": "^4.0.0"
+	},
+	"devDependencies": {
+		"domco": "^4.0.0",
+		"typescript": "^5.9.0",
+		"vite": "^7.0.0"
+	}
+}
